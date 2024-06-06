@@ -1,0 +1,52 @@
+# Python temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Vim temporary files
+*.swp
+*.swo
+*~
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS specific files
+.DS_Store
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+.flakeheaven_cache/
+
+# Sphinx documentation
+docs/_build/
+
+# Tox testing files
+.tox/
+
+# Pytest benchmark files
+.benchmarks/

@@ -1,8 +1,16 @@
 {
-    "project_name": "my_package",
-    "package_name": "my_package",
-    "package_description": "A minimal Python package",
-    "author_name": "Your Name",
-    "author_email": "your@email.com",
-    "python_version": "3.11"
+  "project_name": "my_project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "project_description": "A minimal Python package",
+  "author_name": "Your Name",
+  "author_email": "your@email.com",
+  "python_version": "3.11",
+  "open_source_license": [
+    "MIT",
+    "BSD",
+    "ISCL",
+    "Apache Software License 2.0",
+    "Not open source"
+  ],
+  "_copy_without_render": [".github/workflows/test.yml"]
 }

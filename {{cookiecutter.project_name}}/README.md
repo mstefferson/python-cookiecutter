@@ -1,17 +1,12 @@
-# {{cookiecutter.package_name}}
+# {{cookiecutter.project_name}}
 
-{{cookiecutter.package_description}}
+{{cookiecutter.project_description}}
 
 ## Installation
 
 1. Make sure you have Poetry installed. If not, you can install it by following the instructions in the [Poetry documentation](https://python-poetry.org/docs/#installation).
 
 2. Clone the repository and navigate to the project directory:
-
-```bash
-git clone https://github.com/yourusername/{{cookiecutter.package_name}}.git
-cd {{cookiecutter.package_name}}
-```
 
 3. Initialize the Poetry environment and install the project dependencies:
 
@@ -40,6 +35,17 @@ poetry add --dev <package-name>
 Replace `<package-name>` with the name of the package you want to install.
 
 Poetry will automatically update the `pyproject.toml` file and the `poetry.lock` file to include the newly installed packages.
+
+Note: you should commit the `poetry.lock` file to version control.
+
+## Using pre-commit
+
+This project uses pre-commit to automatically check and format the code before each commit. It best to run run everything in a poetry shell. To enable pre-commit, run the following command:
+
+```bash
+poetry shell
+pre-commit install
+```
 
 ## Usage
 
@@ -71,32 +77,4 @@ poetry run isort .
 
 ## License
 
-TODO: Add license information
-
-````
-
-This updated `README.md` file includes:
-
-- Instructions on how to install Poetry if it's not already installed.
-- Steps to clone the repository and navigate to the project directory.
-- Instructions on how to initialize the Poetry environment and install project dependencies using `poetry install`.
-- Information on how to install additional packages as main or development dependencies using `poetry add` or `poetry add --dev`, respectively.
-- Commands to run the code quality tools (Flakeheaven, Mypy, Black, and isort) using `poetry run`.
-
-Make sure to replace `https://github.com/yourusername/{{cookiecutter.package_name}}.git` with the actual URL of your project repository.
-
-The "Usage" and "License" sections are left as placeholders for you to fill in with the appropriate information specific to your project.
-# {{cookiecutter.package_name}}
-
-{{cookiecutter.package_description}}
-
-## Installation
-
-1. Make sure you have Poetry installed. If not, you can install it by following the instructions in the [Poetry documentation](https://python-poetry.org/docs/#installation).
-
-2. Clone the repository and navigate to the project directory:
-
-```bash
-git clone https://github.com/yourusername/{{cookiecutter.package_name}}.git
-cd {{cookiecutter.package_name}}
-````
+{{cookiecutter.open_source_license}}

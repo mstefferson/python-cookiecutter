@@ -1,5 +1,5 @@
-import {{cookiecutter.package_name}}
+import {{cookiecutter.project_slug}}
 
 
 def test_version():
-    assert isinstance({{cookiecutter.package_name}}.__version__, str)
+    assert isinstance({{cookiecutter.project_slug}}.__version__, str)

@@ -40,3 +40,4 @@ repos:
         types: [python]
         require_serial: true
         args: [--config-file=pyproject.toml]
+        exclude: ^tests/
